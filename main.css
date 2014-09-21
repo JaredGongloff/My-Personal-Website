@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  background: #fff;
+  /* background: linear-gradient(to bottom, #fff 85px, #E6E6E6 120px);  /* 5px to 100px #4C4C4C #262626 Standard syntax */
+  /* background: -webkit-linear-gradient(to bottom, #F2F2F2 5px, #fff 100px);  */
+  /* background: #F2F2F2;  */
+  color: #888;
+  font: 300 16px/22px "Open Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.not-header {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container, .grid{
+  margin: 0 auto;
+  width: 960px;
+
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 30px;
+  /* border: 2px solid red; */
+}
+
+.grid,
+.col-1-3,
+{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.col-1-3{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col-1-3{
+  margin: 10%;
+} 
+.teaser img {
+  /*background: url("kjaredpanoramic.jpg") no-repeat left center; */
+  /*border-radius: 5px; */
+  display: block;
+  margin-bottom: 10px;
+  min-width: 1000px;
+  background-size: 80%;
+  overflow: hidden;
+  padding-left: 20px;
+
+}
+
+.panoramic {
+  display: block;
+  background: url("kjaredpanoramic.jpg") no-repeat center;
+  width: 95%;
+  min-height: 200px;
+  border-radius: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+  vertical-align: top;
+  margin: 10% auto;
+
+}
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/ 
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+} 
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row,
+.row-alt {
+  width: 960px;
+}
+.row {
+  /* border: 2px solid red; */
+  background: #fff;
+  min-width: 960px;
+  padding: 80px 0 20px 0;
+}
+.row-alt {
+  background: #000000; /*#cbe2c1; */
+  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  padding: 44px 0 22px 0;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #00B85C;
+}
+
+/*
+  ========================================
+  Primary Header
+  ========================================
+*/
+
+.logo {
+  float: left;
+  font-size: 46px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 48px;
+  padding: 40px 5px 22px 5px;
+  /*font-variant: underline; */
+}
+
+.primary-header {
+  /* border: 2px solid yellow;  */
+  background: #E6E6E6; 
+  color: #5A5A5A;
+
+}
+
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .75px;
+}
+
+.primary-header, .container {
+
+  /* border: 2px solid purple;  */
+}
+
+/*
+  ========================================
+  Primary Footer
+  ========================================
+*/
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
+.primary-footer {
+  background: #fff;
+  /* color: #5A5A5A; */
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: right;
+  padding-top: 60px;
+  width: 95%; 
+  min-width: 500px;
+  position: absolute;
+  max-width: 900px;
+  /*min-height: 40px; */
+}
+.nav ul {
+  min-height: 60px;
+  max-height: 100px;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.hero {
+  /* border: 2px solid green; */  
+  color: #5A5A5A;  /*#648880; Greenish of Styles Conference */
+  line-height: 44px;
+  padding: 40px 40px 40px 1%;
+  text-align: left;
+  min-width: 500px;
+}
+.hero h2 {
+  font-size: 24px;
+  position: absolute;
+  width: 98%;
+  min-width: 500px;
+}
+
+.hero p {
+  /* padding: 0 10% 10% 0; */
+  text-align: left;
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  max-width: 950px;
+  min-width: 600px;
+}
+
+
+
+/*  Mail 
+html code 
+<section class ="hero container">
+
+  <h2>Contact</h2>
+
+  <p><br>Email: <a href="mailto:jaredGongloff@gmail.com">jaredGongloff@gmail.com</a></p>
+</section>
+*/
+
+
+
+
+
+
+
